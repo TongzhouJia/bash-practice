@@ -74,58 +74,58 @@ Three things that matter most: **awk** (B2.4–2.6 — most log analysis rides o
 | KP | Topic | Tasks | Level | Status |
 |----|-------|-------|-------|--------|
 | B1.1 | Quoting and expansion order: quotes, escapes, `$( )`, `$(( ))`, `{a,b}`, `~` | 12 | ⭐⭐⭐ | ✅ |
-| B1.2 | Globbing: `* ? [ ]`, extglob, nullglob, dotglob | 8 | ⭐ | ⬜ |
-| B1.3 | Parameter expansion: `${v:-} ${v:=} ${#v} ${v%p} ${v#p} ${v/a/b} ${v:i:n} ${v^^}` | 12 | ⭐⭐⭐ | ⬜ |
-| B1.4 | Redirection in depth: `&>`, `2>&1` ordering traps, here-doc, here-string, `exec`, `tee` | 10 | ⭐⭐ | ⬜ |
-| B1.5 | Pipes, exit codes, grouping: `$?`, `&& \|\|`, `{ }` vs `( )`, `pipefail` | 10 | ⭐⭐ | ⬜ |
+| B1.2 | Globbing: `* ? [ ]`, extglob, nullglob, dotglob | 8 | ⭐ | 📝 |
+| B1.3 | Parameter expansion: `${v:-} ${v:=} ${#v} ${v%p} ${v#p} ${v/a/b} ${v:i:n} ${v^^}` | 12 | ⭐⭐⭐ | 📝 |
+| B1.4 | Redirection in depth: `&>`, `2>&1` ordering traps, here-doc, here-string, `exec`, `tee` | 10 | ⭐⭐ | 📝 |
+| B1.5 | Pipes, exit codes, grouping: `$?`, `&& \|\|`, `{ }` vs `( )`, `pipefail` | 10 | ⭐⭐ | 📝 |
 
 #### B2 · Text processing: grep / sed / awk ⭐ core
 | KP | Topic | Tasks | Level | Status |
 |----|-------|-------|-------|--------|
-| B2.1 | grep and regex: BRE/ERE, `-E -o -P -c -v -i -A/-B/-C`, character classes, groups | 10 | ⭐⭐ | ⬜ |
-| B2.2 | sed basics: `s///g`, addresses, delete/print lines, `-n p`, in-place `-i` | 10 | ⭐⭐ | ⬜ |
-| B2.3 | sed advanced: multiple commands, range addresses, backreferences `\1` | 8 | ⭐⭐ | ⬜ |
-| B2.4 | awk basics: `$1..$NF`, `NR/NF`, `-F`, `print/printf`, pattern{action} | 10 | ⭐⭐ | ⬜ |
-| B2.5 | awk further: conditionals, regex matching, `BEGIN/END`, accumulators, sums and averages | 10 | ⭐⭐ | ⬜ |
-| B2.6 | awk associative arrays and reports: `count[$k]++`, dedup, top-N, grouped summaries | 12 | ⭐⭐⭐ | ⬜ |
-| B2.7 | Fields and sets: `cut sort uniq -c tr paste join comm wc column` | 10 | ⭐⭐ | ⬜ |
+| B2.1 | grep and regex: BRE/ERE, `-E -o -P -c -v -i -A/-B/-C`, character classes, groups | 10 | ⭐⭐ | 📝 |
+| B2.2 | sed basics: `s///g`, addresses, delete/print lines, `-n p`, in-place `-i` | 10 | ⭐⭐ | 📝 |
+| B2.3 | sed advanced: multiple commands, range addresses, backreferences `\1` | 8 | ⭐⭐ | 📝 |
+| B2.4 | awk basics: `$1..$NF`, `NR/NF`, `-F`, `print/printf`, pattern{action} | 10 | ⭐⭐ | 📝 |
+| B2.5 | awk further: conditionals, regex matching, `BEGIN/END`, accumulators, sums and averages | 10 | ⭐⭐ | 📝 |
+| B2.6 | awk associative arrays and reports: `count[$k]++`, dedup, top-N, grouped summaries | 12 | ⭐⭐⭐ | 📝 |
+| B2.7 | Fields and sets: `cut sort uniq -c tr paste join comm wc column` | 10 | ⭐⭐ | 📝 |
 
 #### B3 · Writing real scripts
 | KP | Topic | Tasks | Level | Status |
 |----|-------|-------|-------|--------|
-| B3.1 | Script skeleton and safety header: shebang, `set -euo pipefail`, `IFS`, `usage()` | 8 | ⭐ | ⬜ |
-| B3.2 | Conditionals: `[[ ]]` vs `[ ]`, string/numeric/file tests, regex `=~` | 10 | ⭐⭐ | ⬜ |
-| B3.3 | Loops and reading input: `for/while`, `while read -r`, splitting on `IFS=` | 10 | ⭐⭐ | ⬜ |
-| B3.4 | Functions: arguments, `local`, return value vs output, `source`-ing a library | 10 | ⭐⭐ | ⬜ |
-| B3.5 | Argument parsing: `getopts`, short and long options, validating required flags | 8 | ⭐⭐ | ⬜ |
-| B3.6 | Arrays: indexed, associative, the `"${a[@]}"` expansion traps | 10 | ⭐⭐ | ⬜ |
-| B3.7 | `trap` and error handling: `EXIT/INT/TERM`, temp-file cleanup, meaningful exit codes | 8 | ⭐⭐ | ⬜ |
-| B3.8 | Arithmetic: `(( ))`, `$(( ))`, working around no floats via `awk`/`bc` | 8 | ⭐⭐ | ⬜ |
+| B3.1 | Script skeleton and safety header: shebang, `set -euo pipefail`, `IFS`, `usage()` | 8 | ⭐ | 📝 |
+| B3.2 | Conditionals: `[[ ]]` vs `[ ]`, string/numeric/file tests, regex `=~` | 10 | ⭐⭐ | 📝 |
+| B3.3 | Loops and reading input: `for/while`, `while read -r`, splitting on `IFS=` | 10 | ⭐⭐ | 📝 |
+| B3.4 | Functions: arguments, `local`, return value vs output, `source`-ing a library | 10 | ⭐⭐ | 📝 |
+| B3.5 | Argument parsing: `getopts`, short and long options, validating required flags | 8 | ⭐⭐ | 📝 |
+| B3.6 | Arrays: indexed, associative, the `"${a[@]}"` expansion traps | 10 | ⭐⭐ | 📝 |
+| B3.7 | `trap` and error handling: `EXIT/INT/TERM`, temp-file cleanup, meaningful exit codes | 8 | ⭐⭐ | 📝 |
+| B3.8 | Arithmetic: `(( ))`, `$(( ))`, working around no floats via `awk`/`bc` | 8 | ⭐⭐ | 📝 |
 
 #### B4 · Scripts that do real work ⭐
 | KP | Topic | Tasks | Level | Status |
 |----|-------|-------|-------|--------|
-| B4.1 | Log analysis: parse `/var/log`, count errors, top IPs, filter by time window | 12 | ⭐⭐⭐ | ⬜ |
-| B4.2 | Health checks: disk/memory/CPU/load thresholds and alerts | 12 | ⭐⭐⭐ | ⬜ |
-| B4.3 | Process and service monitoring: heavy processes, service watchdog, `systemctl is-active` | 10 | ⭐⭐ | ⬜ |
-| B4.4 | Bulk users/files/permissions: list-driven create, modify, audit | 10 | ⭐⭐ | ⬜ |
-| B4.5 | Backup and rotation: `tar`/`rsync`, date-stamped names, keep N and prune | 10 | ⭐⭐ | ⬜ |
-| B4.6 | Idempotent and defensive: dry-run, check before acting, lock files against concurrency | 8 | ⭐⭐ | ⬜ |
+| B4.1 | Log analysis: parse `/var/log`, count errors, top IPs, filter by time window | 12 | ⭐⭐⭐ | 📝 |
+| B4.2 | Health checks: disk/memory/CPU/load thresholds and alerts | 12 | ⭐⭐⭐ | 📝 |
+| B4.3 | Process and service monitoring: heavy processes, service watchdog, `systemctl is-active` | 10 | ⭐⭐ | 📝 |
+| B4.4 | Bulk users/files/permissions: list-driven create, modify, audit | 10 | ⭐⭐ | 📝 |
+| B4.5 | Backup and rotation: `tar`/`rsync`, date-stamped names, keep N and prune | 10 | ⭐⭐ | 📝 |
+| B4.6 | Idempotent and defensive: dry-run, check before acting, lock files against concurrency | 8 | ⭐⭐ | 📝 |
 
 #### B5 · Automation across hosts
 | KP | Topic | Tasks | Level | Status |
 |----|-------|-------|-------|--------|
-| B5.1 | Batch ssh: loop over hosts, key auth, collect results, continue past failures | 10 | ⭐⭐ | ⬜ |
-| B5.2 | Parallelism: `xargs -P`, `& ... wait`, capping concurrency | 8 | ⭐⭐ | ⬜ |
-| B5.3 | Scheduled runs: scripts under cron and systemd timers (locking, logging, idempotency) — pairs with D6.1/6.2 | 8 | ⭐⭐ | ⬜ |
-| B5.4 | (Optional) `jq` for JSON: `curl` an API, extract fields | 8 | ⭐⭐ | ⬜ |
+| B5.1 | Batch ssh: loop over hosts, key auth, collect results, continue past failures | 10 | ⭐⭐ | 📝 |
+| B5.2 | Parallelism: `xargs -P`, `& ... wait`, capping concurrency | 8 | ⭐⭐ | 📝 |
+| B5.3 | Scheduled runs: scripts under cron and systemd timers (locking, logging, idempotency) — pairs with D6.1/6.2 | 8 | ⭐⭐ | 📝 |
+| B5.4 | (Optional) `jq` for JSON: `curl` an API, extract fields | 8 | ⭐⭐ | 📝 |
 
 #### B6 · Debugging and quality
 | KP | Topic | Tasks | Level | Status |
 |----|-------|-------|-------|--------|
-| B6.1 | Debugging: `bash -x`, `set -x/-v`, `PS4`, pinpointing the failing line | 8 | ⭐ | ⬜ |
-| B6.2 | Read a broken script and fix it | 12 | ⭐⭐⭐ | ⬜ |
-| B6.3 | `shellcheck` and common traps: unquoted variables, word splitting, `[ ]` pitfalls | 8 | ⭐ | ⬜ |
+| B6.1 | Debugging: `bash -x`, `set -x/-v`, `PS4`, pinpointing the failing line | 8 | ⭐ | 📝 |
+| B6.2 | Read a broken script and fix it | 12 | ⭐⭐⭐ | 📝 |
+| B6.3 | `shellcheck` and common traps: unquoted variables, word splitting, `[ ]` pitfalls | 8 | ⭐ | 📝 |
 
 ### 03 · Operating Running Systems (7 KPs)
 
